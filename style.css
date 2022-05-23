@@ -1,0 +1,127 @@
+/* Kat Profile Style sheet */
+
+body {
+  /* padding: 20px; */
+  font-family: "Libre Franklin", "Lato", sans-serif;
+  background: white;
+}
+
+.header {
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  padding-left: 20px;
+  text-align: left;
+  color: white;
+  font-family: "Libre Franklin", "Lato", sans-serif;
+  background-color: #642580;
+}
+
+/* Nav Bar */
+
+.navbar {
+  background-color: #642580;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.navbar a {
+  color: white;
+  font-family: "Libre Franklin", "Lato", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.flexiNav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.flexiNav ul li {
+  flex-grow: 1;
+}
+
+.social {
+  display: flex;
+}
+
+@media all and (max-width: 1024px) {
+  .flexiNav ul li {
+    width: 50%;
+  }
+  .flexiNav .social {
+    width: 25%;
+  }
+}
+@media all and (max-width: 500px) {
+  .flexiNav ul li {
+    width: 100%;
+  }
+}
+
+/* Content */
+.content {
+  box-sizing: border-box;
+  border: 1px solid #642580;
+  padding: 15px 20px 20px 20px;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+/* create two equal columns that float next to each other */
+
+/* flex row - keeps website inline */
+.row {
+  display: flex;
+  min-height: 50vh;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* left column */
+.leftColumn {
+  float: left;
+  width: 35%;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+/* right column */
+.rightColumn {
+  float: right;
+  width: 65%;
+}
+
+/* a franme for an image */
+.imgae_frame {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 50%;
+}
+
+/* Footer */
+footer {
+  color: #642580;
+  font-family: "Libre Franklin", sans-serif;
+  padding: 20px;
+  text-align: center;
+  padding: 15px 20px 20px 20px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #642580;
+}
